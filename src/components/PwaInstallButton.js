@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 export default function PwaInstallButton() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isFirefox, setIsFirefox] = useState(false);
