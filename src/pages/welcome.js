@@ -52,7 +52,7 @@ export default function WelcomePage() {
     };
 
     checkSession(); // 🚀 Inicia a verificação da sessão ao carregar a página
-  }, []);
+  }, [router]);
 
   // ✅ Função para Logout
   const handleLogout = async () => {

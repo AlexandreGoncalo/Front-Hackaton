@@ -14,7 +14,7 @@ export default function ErrorPage({ statusCode }) {
     }, redirectDelay);
 
     return () => clearTimeout(timeout); // Limpeza do timeout caso o utilizador saia antes
-  }, []);
+  }, [router]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6 text-center">
@@ -25,8 +25,8 @@ export default function ErrorPage({ statusCode }) {
       {/* ✅ Mensagem dinâmica de erro */}
       <h1 className="text-3xl font-bold">
         {statusCode === 404
-          ? messages.error?.page_not_found // 🔍 Página não encontrada (404)
-          : messages.error?.server_error} // 🚨 Erro do servidor (500)
+          ? messages.error?.page_not_found 
+          : messages.error?.server_error} 
       </h1>
 
       <p className="text-gray-400 mt-2">{messages.error?.redirecting_auth}</p>

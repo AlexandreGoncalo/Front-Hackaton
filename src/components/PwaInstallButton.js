@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 export default function PwaInstallButton() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [isFirefox, setIsFirefox] = useState(false);
@@ -37,7 +36,7 @@ export default function PwaInstallButton() {
       {isFirefox || isSafari ? (
         <div className="mt-2 text-white text-sm bg-gray-800 p-2 rounded">
           ❌ O seu navegador não suporta instalação via botão. 
-          <br />Para instalar, vá ao **menu do navegador** e selecione **"Adicionar ao ecrã inicial"**.
+          <br />Para instalar, vá ao **menu do navegador e selecione Adicionar ao ecrã inicial.
         </div>
       ) : (
         <button

@@ -10,7 +10,7 @@ export default function Home() {
   // Utilização do hook useEffect
   useEffect(() => {
     router.replace("/auth"); // Redireciona para a página de login automaticamente
-  }, []);
+  }, [router]);
 
   // Retorno da função para renderização do componente (HTML)
   return (

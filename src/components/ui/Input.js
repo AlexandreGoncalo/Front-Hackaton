@@ -20,4 +20,6 @@ const Input = forwardRef(({ label, type = "text", name, value, onChange, disable
   );
 });
 
+Input.displayName = "Input";
+
 export default Input;
